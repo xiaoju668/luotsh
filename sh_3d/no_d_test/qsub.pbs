@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#PBS -l walltime=999:00:00
+#PBS -l nodes=1:ppn=8
+#PBS -q eth
+#PBS -V
+#PBS -j oe
+
+cd $PBS_O_WORKDIR
+
+python3 sh_nocoupling.py
+
